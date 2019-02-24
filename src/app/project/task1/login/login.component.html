@@ -1,0 +1,19 @@
+<h5>Login to your account, please</h5>
+<form [formGroup]="registerForm">
+        <fieldset>
+  <div class="form-group">
+    <label for="inputEmail" style="margin-left:350px"> Email address </label>
+    <input type="email" formControlName="email"  class="form-control" style="width: 45%; margin-left:350px" required>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword" style="margin-left:350px"> Password </label>
+    <input type="password" formControlName="password" class="form-control" style="width: 45%;margin-left:350px" required>
+    <label class="error">{{errorMessage}}</label>
+    <label class="success">{{successMessage}}</label>
+  </div>
+  <button type="submit" (click)="login(registerForm.value)" class="btn btn-outline-secondary" style="margin-left:600px">Login</button><br/><br/>
+  <button (click)="logout()" *ngIf="authService.user | async">
+    Logout
+  </button>
+</fieldset>
+</form>

@@ -1,0 +1,10 @@
+<form [formGroup]="postForm">
+  <div class="form-group">
+    <label style="margin-left:500px"> Enter Postcode </label>
+    <input  formControlName="firstPost" class="form-control" style="width: 45%; margin-left:300px" required><br/>
+    <button (click)="searchPost(postForm.value)" class="btn btn-outline-secondary" style="margin-left:525px">Show on Map</button>
+  </div>
+    <!-- <agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map> -->
+  </form>

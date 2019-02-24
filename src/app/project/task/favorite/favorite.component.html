@@ -1,0 +1,21 @@
+<!-- <div class="row">
+  <div class="col-sm-12">
+    <h3>Favorite Movies</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div  class="col-sm-4" *ngFor="let fav of localStorageItems; let i = index">
+      <div class="card mt-3 mb-3">
+        <div class="card-header text-center">
+          {{ fav.release_date | date:'mediumDate' }}
+        </div>
+        <div class="card-body">
+          <img class="card-img-top img-fluid" src="https://image.tmdb.org/t/p/w500/{{ fav.poster_path }}" alt="{{ fav.original_title }}" style="height: 460px">
+          <p class="text-center">{{ fav.original_title }}</p>
+          <a routerLink="/movie/{{ fav.id }}" href="#" class="btn btn-block btn-outline-secondary">Movie Details</a>
+          <a  class="btn btn-block btn-outline-secondary" (click)="deleteFromFavorite(fav.original_title)">Delete from favorite</a>
+        </div>
+      </div>
+  </div>
+</div>  -->

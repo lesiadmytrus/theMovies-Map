@@ -1,0 +1,14 @@
+<form class="input-field">
+<div class="form-group">
+  <input placeholder="Enter location"
+    ngx-google-places-autocomplete 
+    (onAddressChange)="handleAddressChange($event)" 
+    class="form-control"
+    style="width: 45%; margin-left:300px"/><br/>
+  <button (click)="showLocation()" class="btn btn-outline-secondary" style="margin-left:525px">search</button>
+</div>
+</form>
+<agm-map [latitude]="coordinate.lat" [longitude]="coordinate.lng">
+  <agm-marker [latitude]="coordinate.lat" [longitude]="coordinate.lng"></agm-marker>
+</agm-map>
+ 

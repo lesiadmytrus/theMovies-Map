@@ -1,0 +1,16 @@
+.container {
+  padding-left: 50px;
+  padding-top: 100px;
+} 
+
+ul {
+    list-style-type: square; 
+}
+
+li {
+    line-height: 3.8;
+    color: rgb(202, 227, 248);
+    word-spacing: 4px;
+    font-size: 24px;
+
+}
